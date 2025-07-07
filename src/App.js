@@ -36,7 +36,7 @@ function App() {
     if (editUser) {
       await axios.put(`${API_URL}/api/users/${editUser._id}`, formData);
     } else {
-      await axios.post(API_URL, formData);
+      await axios.post(`${API_URL}/api/users`, formData);
     }
     fetchUsers();
     closeModal();
