@@ -4,7 +4,7 @@ import UserFormModal from "./components/UserFormModal";
 import "./App.css";
 
 // const API_URL = "http://localhost:5000/api/users";
-const API_URL = process.env.API_URL
+const API_URL = "https://user-crud-api-u3ht.onrender.com/api/users"
 
 function App() {
   const [users, setUsers] = useState([]);
