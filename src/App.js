@@ -34,7 +34,7 @@ function App() {
 
   const handleSubmit = async () => {
     if (editUser) {
-      await axios.put(`${API_URL}/${editUser._id}`, formData);
+      await axios.put(`${API_URL}/api/users/${editUser._id}`, formData);
     } else {
       await axios.post(API_URL, formData);
     }
@@ -43,7 +43,7 @@ function App() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`${API_URL}/${id}`);
+    await axios.delete(`${API_URL}/api/users/${id}`);
     fetchUsers();
   };
 
