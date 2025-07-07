@@ -3,7 +3,8 @@ import axios from "axios";
 import UserFormModal from "./components/UserFormModal";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/users";
+// const API_URL = "http://localhost:5000/api/users";
+const API_URL = process.env.API_URL
 
 function App() {
   const [users, setUsers] = useState([]);
