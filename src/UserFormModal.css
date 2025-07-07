@@ -1,0 +1,29 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20;
+}
+
+.modal-box {
+  background: white;
+  padding: 50px;
+  width: 300px;
+  border-radius: 8px;
+  padding: 20;
+}
+
+.modal-box form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
