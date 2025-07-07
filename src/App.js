@@ -4,7 +4,7 @@ import UserFormModal from "./components/UserFormModal";
 import "./App.css";
 
 // const API_URL = "http://localhost:5000/api/users";
-const API_URL = "https://user-crud-api-u3ht.onrender.com/api/users"
+const API_URL = "https://user-crud-api-u3ht.onrender.com/"
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -13,7 +13,7 @@ function App() {
   const [editUser, setEditUser] = useState(null);
 
   const fetchUsers = async () => {
-    const res = await axios.get(API_URL);
+    const res = await axios.get(`${API_URL}/api/users`);
     setUsers(res.data);
   };
 
